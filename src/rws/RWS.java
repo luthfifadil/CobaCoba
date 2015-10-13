@@ -29,7 +29,7 @@ public class RWS {
         for (int i = 0 ; i< 100 ; i ++ ){
             sum2 += pop1.pop[i].getFitness();
             if (sum2 >= random) {
-                System.out.println("asdasdasd"+i);
+                System.out.println("Individu ke : "+i);
                 System.out.println("Fitness : "+pop1.pop[i].getFitness());
             }
         }
