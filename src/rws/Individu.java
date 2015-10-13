@@ -10,15 +10,15 @@ package rws;
  * @author luthfifadil
  */
 public class Individu {
-    int fitness ;
+    double fitness ;
     
     public Individu (){
     }
     
-    public int getFitness(){
+    public double getFitness(){
         return fitness;
     }
-    public void setFitness(){
+    public void setFitness(double fitness){
         this.fitness = fitness;
     }
 }
