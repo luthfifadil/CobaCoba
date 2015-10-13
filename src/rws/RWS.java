@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package rws;
+
 import static java.lang.Math.random;
 import static java.lang.StrictMath.random;
 /**
@@ -23,8 +24,15 @@ public class RWS {
         for (int i = 0 ; i < 100 ; i ++) {
             sum += pop1.pop[i].getFitness();
         }
-        double random = Math.random() * sum + 0;
-        
+        double random = Math.random() * sum;
+        double sum2 = 0;
+        for (int i = 0 ; i< 100 ; i ++ ){
+            sum2 += pop1.pop[i].getFitness();
+            if (sum2 >= random) {
+                System.out.println("asdasdasd"+i);
+                System.out.println("Fitness : "+pop1.pop[i].getFitness());
+            }
+        }
         
         
 // TODO code application logic here
